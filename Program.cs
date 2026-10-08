@@ -1,15 +1,16 @@
-﻿using InterviewToolkit.Algorithms;
+using InterviewToolkit.Algorithms;
 using InterviewToolkit.DataStructures;
+using InterviewToolkit.FileIO;
 
 namespace InterviewToolkit;
 
 /// <summary>
-/// Walks each data structure and algorithm and checks the results. A failed check throws,
+/// Walks each data structure, algorithm, and File IO example and checks the results. A failed check throws,
 /// so a clean run means the operations below behaved as expected.
 /// </summary>
 internal static class Program
 {
-    private static void Main()
+    private static async Task Main()
     {
         DemonstrateTree();
         DemonstrateDoublyLinkedList();
@@ -24,7 +25,8 @@ internal static class Program
         DemonstrateLongestIncreasingSubsequence();
         DemonstrateKnapsack();
         Console.WriteLine();
-        Console.WriteLine("All data structure and algorithm checks passed.");
+        await FileIOTour.RunAsync();
+        Console.WriteLine("All data structure, algorithm, and File IO checks passed.");
     }
 
     private static void DemonstrateTree()

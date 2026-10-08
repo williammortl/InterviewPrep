@@ -1,0 +1,2 @@
+<!DOCTYPE candidate [<!ENTITY sample "expanded">]>
+<candidate><Name>&sample;</Name></candidate>

@@ -1,0 +1,3 @@
+First line: hello Zoë.
+Second line contains needle.
+Third line contains needle too.
