@@ -1,11 +1,12 @@
 using InterviewToolkit.Algorithms;
 using InterviewToolkit.DataStructures;
 using InterviewToolkit.FileIO;
+using InterviewToolkit.Concurrency;
 
 namespace InterviewToolkit;
 
 /// <summary>
-/// Walks each data structure, algorithm, and File IO example and checks the results. A failed check throws,
+/// Walks the data structure, algorithm, File IO, and concurrency examples and checks the results. A failed check throws,
 /// so a clean run means the operations below behaved as expected.
 /// </summary>
 internal static class Program
@@ -26,7 +27,8 @@ internal static class Program
         DemonstrateKnapsack();
         Console.WriteLine();
         await FileIOTour.RunAsync();
-        Console.WriteLine("All data structure, algorithm, and File IO checks passed.");
+        await ConcurrencyTour.RunAsync();
+        Console.WriteLine("All data structure, algorithm, File IO, and concurrency checks passed.");
     }
 
     private static void DemonstrateTree()

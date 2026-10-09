@@ -10,6 +10,10 @@ dotnet run
 
 See [the File IO guide](FileIO/README.md) for JSON/XML serialization, CSV parsing and writing, stream corner cases, and file-lock recovery.
 
+See [the concurrency guide](Concurrency/README.md) for synchronization primitives,
+threads, tasks, async/await, cancellation, and parallel loops. The classes in
+`InterviewToolkit.Concurrency` are exercised and checked by `dotnet run`.
+
 ## Testing with the included sample files
 
 [FileIO/Examples](FileIO/Examples/README.md) contains valid JSON/XML candidates,
